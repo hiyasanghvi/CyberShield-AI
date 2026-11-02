@@ -1,0 +1,42 @@
+{
+    "model_type": "RandomForestClassifier",
+    "n_estimators": 200,
+    "feature_count": 17,
+    "features": [
+        "URLLength",
+        "DomainLength",
+        "IsDomainIP",
+        "NoOfSubDomain",
+        "HasObfuscation",
+        "NoOfObfuscatedChar",
+        "ObfuscationRatio",
+        "NoOfLettersInURL",
+        "LetterRatioInURL",
+        "NoOfDegitsInURL",
+        "DegitRatioInURL",
+        "NoOfEqualsInURL",
+        "NoOfQMarkInURL",
+        "NoOfAmpersandInURL",
+        "NoOfOtherSpecialCharsInURL",
+        "SpacialCharRatioInURL",
+        "IsHTTPS"
+    ],
+    "training_samples": 188296,
+    "testing_samples": 47074,
+    "accuracy": 0.9953265072014276,
+    "precision": 0.9933967832374206,
+    "recall": 0.9984797923618836,
+    "f1_score": 0.9959318022116203,
+    "roc_auc": 0.9975062922709217,
+    "confusion_matrix": [
+        [
+            19925,
+            179
+        ],
+        [
+            41,
+            26929
+        ]
+    ],
+    "purpose": "Deployable URL-only phishing detection model"
+}

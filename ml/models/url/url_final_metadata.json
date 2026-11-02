@@ -1,0 +1,152 @@
+{
+    "model_name": "CyberShield URL Random Forest",
+    "model_type": "RandomForestClassifier",
+    "version": "1.0",
+    "training_samples": 235370,
+    "number_of_features": 24,
+    "features": [
+        "URLLength",
+        "DomainLength",
+        "IsDomainIP",
+        "NoOfSubDomain",
+        "HasObfuscation",
+        "NoOfObfuscatedChar",
+        "ObfuscationRatio",
+        "NoOfLettersInURL",
+        "LetterRatioInURL",
+        "NoOfDegitsInURL",
+        "DegitRatioInURL",
+        "NoOfEqualsInURL",
+        "NoOfQMarkInURL",
+        "NoOfAmpersandInURL",
+        "NoOfOtherSpecialCharsInURL",
+        "SpacialCharRatioInURL",
+        "IsHTTPS",
+        "NoOfURLRedirect",
+        "NoOfSelfRedirect",
+        "HasExternalFormSubmit",
+        "HasPasswordField",
+        "Bank",
+        "Pay",
+        "Crypto"
+    ],
+    "n_estimators": 200,
+    "random_state": 42,
+    "class_weight": "balanced",
+    "validation": {
+        "five_fold_accuracy_mean": 0.9971,
+        "five_fold_accuracy_std": 0.0001,
+        "five_fold_precision_mean": 0.996,
+        "five_fold_precision_std": 0.0003,
+        "five_fold_recall_mean": 0.999,
+        "five_fold_recall_std": 0.0001,
+        "five_fold_f1_mean": 0.9975,
+        "five_fold_f1_std": 0.0001,
+        "five_fold_roc_auc_mean": 0.999,
+        "five_fold_roc_auc_std": 0.0001,
+        "unseen_domain_accuracy": 0.9954,
+        "unseen_domain_precision": 0.995,
+        "unseen_domain_recall": 0.9988,
+        "unseen_domain_f1": 0.9969,
+        "unseen_domain_roc_auc": 0.997,
+        "unseen_domain_overlap": 0
+    },
+    "feature_importance": [
+        {
+            "feature": "IsHTTPS",
+            "importance": 0.35924974714358954
+        },
+        {
+            "feature": "NoOfOtherSpecialCharsInURL",
+            "importance": 0.10846058573975408
+        },
+        {
+            "feature": "LetterRatioInURL",
+            "importance": 0.08547660774669272
+        },
+        {
+            "feature": "NoOfDegitsInURL",
+            "importance": 0.0795968188365726
+        },
+        {
+            "feature": "SpacialCharRatioInURL",
+            "importance": 0.07378116433472744
+        },
+        {
+            "feature": "DegitRatioInURL",
+            "importance": 0.07213290200295004
+        },
+        {
+            "feature": "URLLength",
+            "importance": 0.052264933928092276
+        },
+        {
+            "feature": "NoOfLettersInURL",
+            "importance": 0.051293976758980245
+        },
+        {
+            "feature": "NoOfSubDomain",
+            "importance": 0.03464799626238547
+        },
+        {
+            "feature": "Pay",
+            "importance": 0.03272673246435181
+        },
+        {
+            "feature": "DomainLength",
+            "importance": 0.03039469369744383
+        },
+        {
+            "feature": "Bank",
+            "importance": 0.0067968108849109305
+        },
+        {
+            "feature": "HasPasswordField",
+            "importance": 0.003932633349191447
+        },
+        {
+            "feature": "HasExternalFormSubmit",
+            "importance": 0.003618089042604218
+        },
+        {
+            "feature": "NoOfSelfRedirect",
+            "importance": 0.0029220122782539467
+        },
+        {
+            "feature": "NoOfQMarkInURL",
+            "importance": 0.001039729580602574
+        },
+        {
+            "feature": "NoOfURLRedirect",
+            "importance": 0.0007366462344300393
+        },
+        {
+            "feature": "NoOfEqualsInURL",
+            "importance": 0.000494445544565441
+        },
+        {
+            "feature": "Crypto",
+            "importance": 0.0003604832577770134
+        },
+        {
+            "feature": "NoOfAmpersandInURL",
+            "importance": 5.422296525634574e-05
+        },
+        {
+            "feature": "IsDomainIP",
+            "importance": 1.7414452750598645e-05
+        },
+        {
+            "feature": "HasObfuscation",
+            "importance": 1.0002225666593534e-06
+        },
+        {
+            "feature": "NoOfObfuscatedChar",
+            "importance": 2.3760787944604292e-07
+        },
+        {
+            "feature": "ObfuscationRatio",
+            "importance": 1.156636713498311e-07
+        }
+    ]
+}

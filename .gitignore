@@ -1,0 +1,39 @@
+# Package manager cache
+.pnpm-store/
+
+# Python environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Node dependencies
+node_modules/
+dist/
+
+# Logs and caches
+*.log
+.pytest_cache/
+.vscode/
+.idea/
+
+# Private keys
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Database backups
+*_backup.sql
+*.dump
+# Large raw and processed datasets
+ml/datasets/url/raw/
+ml/datasets/url/processed/
+ml/datasets/email/raw/
+ml/datasets/email/processed/
+ml/datasets/sms/raw/

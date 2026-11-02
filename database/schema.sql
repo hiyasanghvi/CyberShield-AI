@@ -1,0 +1,1 @@
+-- CyberShield-AI MySQL schema will be implemented during Phase 1.
